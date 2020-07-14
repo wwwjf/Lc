@@ -1,10 +1,7 @@
 package com.wwwjf;
 
 import com.wwwjf.algorithm.Sort;
-import com.wwwjf.leetcode.ListNode;
-import com.wwwjf.leetcode.SubString;
-import com.wwwjf.leetcode.TwoPlus;
-import com.wwwjf.leetcode.TwoSum;
+import com.wwwjf.leetcode.*;
 
 public class MainTest {
     public static void main(String[] args){
@@ -46,6 +43,17 @@ public class MainTest {
 
         int sub = SubString.lengthOfLongestSubstring("abcdaaeklaabcde");
         System.out.println("sub="+sub);
+
+        System.out.println("================");
+        int[] numsPair =new int[]{1,2,3,1,1,3};
+        System.out.println(NumPairs.numIdenticalPairs(numsPair));
+        System.out.println("================");
+        for (int i : DynamicSum.runningSum(new int[]{1, 2, 3, 4})) {
+            System.out.println("---i="+i);
+        }
+
+        System.out.println(StringRevese.reverseLeftWords("abcdefg"));
+
     }
 
 
